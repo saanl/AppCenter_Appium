@@ -18,6 +18,23 @@
 
 * Copy this [snippet](https://github.com/Microsoft/AppCenter-Test-Appium-Java-Extensions/blob/master/uploadprofilesnippet.xml) into your pom.xml in the <profiles> tag. If there's no <profiles> section in your pom, make one.
 
+* Add a dependency for the Appium test extensions: 
+````
+<repositories>
+    <repository>
+      <id>jcenter</id>
+      <url>https://jcenter.bintray.com/</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.microsoft.appcenter</groupId>
+    <artifactId>appium-test-extension</artifactId>
+    <version>1.5</version>
+</dependency>
+
+````
+
 * Create the Test code, name as `Test*.java | *Test.java  | *Tests.java  | *TestCase.java`
 
 ````
