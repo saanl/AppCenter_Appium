@@ -5,7 +5,7 @@
 ----
 * Install appium 1.11.0: `npm install appium@1.11.0 -g` and then start the command: `appium`
 
-![](https://github.com/saanl/AppCenter_Appium/imgs/p1.jpg "pic")
+![](https://github.com/saanl/AppCenter_Appium/blob/master/imgs/p1.jpg "pic")
 
 * Check your pom.xml to see if there is a `maven-surefire-plugin` plugin below your `build/pluginManagement/plugins`. If not, please add this plugin:
 
@@ -47,19 +47,19 @@ public class TestUI {
 
 * Run the `mvn surefire:test -f "Your project/pom.xml" ` or Execute the `surefire:test` task
 
-![](https://github.com/saanl/AppCenter_Appium/imgs/p2.jpg "pic")
+![](https://github.com/saanl/AppCenter_Appium/blob/master/imgs/p2.jpg "pic")
 
 
 * If you see this picture, the test case works fine.
 
-![](https://github.com/saanl/AppCenter_Appium/imgs/p3.jpg "pic")
+![](https://github.com/saanl/AppCenter_Appium/blob/master/imgs/p3.jpg "pic")
 
 
 * Pack your test classes and all dependencies into the target/upload folder
 
 `mvn -DskipTests -P prepare-for-upload package`
 
-![](https://github.com/saanl/AppCenter_Appium/imgs/p4.jpg "pic")
+![](https://github.com/saanl/AppCenter_Appium/blob/master/imgs/p4.jpg "pic")
 
 
 * Use appcenter command to run the Test
@@ -68,4 +68,4 @@ public class TestUI {
 appcenter test run appium --app "{OwnerName}/{AppName}" --devices "{OwnerName}/{DeviceSetID}" --app-path "{Your path to apk file}.apk"  --test-series "master" --locale "en_US" --build-dir target/upload
 ````
 
-![](https://github.com/saanl/AppCenter_Appium/imgs/p5.jpg "pic")
+![](https://github.com/saanl/AppCenter_Appium/blob/master/imgs/p5.jpg "pic")
